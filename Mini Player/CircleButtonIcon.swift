@@ -20,8 +20,8 @@ struct CircleButtonIcon<Content: Shape>: View {
     var body: some View {
         ZStack {
             shape
-                .stroke(Color.white)
-                .offset(y: 0.5)
+                .fill(Color.white)
+                .offset(y: 1)
             
             shape
                 .fill(LinearGradient(
@@ -34,6 +34,6 @@ struct CircleButtonIcon<Content: Shape>: View {
 
 struct CircleButtonIcon_Previews: PreviewProvider {
     static var previews: some View {
-        CircleButtonIcon(shape: PlayIcon())
+        CircleButtonIcon(shape: PauseIcon())
     }
 }

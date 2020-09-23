@@ -48,16 +48,8 @@ struct CircleButton<Label>: View where Label: View {
 struct CircleButton_Previews: PreviewProvider {
     static var previews: some View {
         CircleButton(action: {}, icon: {
-            PlayIcon()
-                .fill(LinearGradient(
-                        gradient: Gradient(colors: [
-                            Color(.sRGB, red: 0.06, green: 0.06, blue: 0.06),
-                            Color(.sRGB, red: 0.42, green: 0.43, blue: 0.43)
-                        ]),
-                        startPoint: .top,
-                        endPoint: .bottom))
+            CircleButtonIcon(shape: PauseIcon())
                 .frame(width: 11, height: 11)
-                .padding(.leading, 2)
         })
         .frame(width: 30, height: 31)
     }

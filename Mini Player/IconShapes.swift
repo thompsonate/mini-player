@@ -24,10 +24,10 @@ struct PlayIcon: Shape {
 
 struct PauseIcon: Shape {
     func path(in rect: CGRect) -> Path {
-        let x0: CGFloat = 0.0
-        let x1 = rect.width * 0.35
-        let x2 = rect.width * 0.65
-        let x3 = rect.width
+        let x0 = rect.minX
+        let x1 = rect.width * 4/11
+        let x2 = rect.width * 7/11
+        let x3 = rect.maxX
         
         var leftPath = Path()
         leftPath.move(to: CGPoint(x: x1, y: rect.minY))
@@ -55,7 +55,7 @@ struct TrackSkipIcon: Shape {
     let direction: Direction
     
     func path(in rect: CGRect) -> Path {
-        let midX = rect.width * 0.5
+        let midX = rect.width * 7/15
         
         var path = Path()
         path.move(to: CGPoint(x: rect.minX, y: rect.minY))
