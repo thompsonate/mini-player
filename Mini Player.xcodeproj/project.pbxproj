@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437532C7251C0907008CDB9D /* LCDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C6251C0907008CDB9D /* LCDContentView.swift */; };
+		437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */; };
 		43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */; };
 		43E99E6D251AF6B100B0181C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E99E6C251AF6B100B0181C /* AppDelegate.swift */; };
 		43E99E6F251AF6B100B0181C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E99E6E251AF6B100B0181C /* ContentView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437532C6251C0907008CDB9D /* LCDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDContentView.swift; sourceTree = "<group>"; };
+		437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Shuffl.swift"; sourceTree = "<group>"; };
 		43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonIcon.swift; sourceTree = "<group>"; };
 		43E99E69251AF6B100B0181C /* Mini Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E99E6C251AF6B100B0181C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,10 +81,12 @@
 				43E99E80251AF8F300B0181C /* ControlsView.swift */,
 				43E99E94251B113900B0181C /* VolumeSliderView.swift */,
 				43E99E83251AF8FB00B0181C /* LCDView.swift */,
+				437532C6251C0907008CDB9D /* LCDContentView.swift */,
 				43E99E89251B027800B0181C /* CircleButton.swift */,
 				43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */,
 				43E99E90251B079C00B0181C /* ShapeButtonStyle.swift */,
 				43E99E8D251B054800B0181C /* IconShapes.swift */,
+				437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */,
 				43E99E70251AF6B500B0181C /* Assets.xcassets */,
 				43E99E75251AF6B500B0181C /* Main.storyboard */,
 				43E99E78251AF6B500B0181C /* Info.plist */,
@@ -168,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437532C7251C0907008CDB9D /* LCDContentView.swift in Sources */,
 				43E99E8E251B054800B0181C /* IconShapes.swift in Sources */,
 				43E99E91251B079C00B0181C /* ShapeButtonStyle.swift in Sources */,
 				43E99E87251B01A000B0181C /* BackgroundView.swift in Sources */,
@@ -177,6 +184,7 @@
 				43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */,
 				43E99E84251AF8FB00B0181C /* LCDView.swift in Sources */,
 				43E99E6D251AF6B100B0181C /* AppDelegate.swift in Sources */,
+				437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */,
 				43E99E95251B113900B0181C /* VolumeSliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
