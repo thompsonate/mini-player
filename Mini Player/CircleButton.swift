@@ -14,7 +14,7 @@ struct CircleButton<Label>: View where Label: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color.white)
+                .strokeBorder(Color(.sRGB, red: 0.87, green: 0.87, blue: 0.87))
             
             Button(action: action, label: {
                 ZStack {
@@ -26,12 +26,13 @@ struct CircleButton<Label>: View where Label: View {
                         startRadius: 6,
                         endRadius: 20))
                     
-                    Circle().stroke()
+                    Circle()
+                        .strokeBorder()
                         .shadow(color: .black, radius: 1, x: 0, y: 0)
                         .clipShape(Circle())
 
                     Circle()
-                        .stroke(Color(.sRGB, red: 0.4, green: 0.4, blue: 0.4))
+                        .strokeBorder(Color(.sRGB, red: 0.4, green: 0.4, blue: 0.4))
                     
                     icon()
                 }
