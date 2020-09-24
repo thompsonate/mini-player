@@ -12,49 +12,53 @@ struct ControlsView: View {
     
     var body: some View {
         VStack(spacing: 3) {
-            Spacer(minLength: 10)
+            Spacer(minLength: 9)
 
             HStack(spacing: 2) {
-                CircleButton(action: {
+                Button(action: {
 
-                }, icon: {
+                }, label: {
                     CircleButtonIcon(
                         shape: TrackSkipIcon(direction: .previous))
                     .offset(x: -1)
                     .frame(width: 15, height: 9)
 
                 })
+                .buttonStyle(CircleButtonStyle())
                 .frame(width: 27, height: 28)
                 
                 if isPlaying {
-                    CircleButton(action: {
+                    Button(action: {
                         isPlaying = false
-                    }, icon: {
+                    }, label: {
                         CircleButtonIcon(shape: PauseIcon())
                             .frame(width: 11, height: 11)
                         
                     })
-                    .frame(width: 31, height: 32)
+                    .buttonStyle(CircleButtonStyle())
+                    .frame(width: 31, height: 31)
                 } else {
-                    CircleButton(action: {
+                    Button(action: {
                         isPlaying = true
-                    }, icon: {
+                    }, label: {
                         CircleButtonIcon(shape: PlayIcon())
                             .frame(width: 11, height: 11)
                             .offset(x: 1)
                         
                     })
-                    .frame(width: 31, height: 32)
+                    .buttonStyle(CircleButtonStyle())
+                    .frame(width: 31, height: 31)
                 }
                 
-                CircleButton(action: {
+                Button(action: {
 
-                }, icon: {
+                }, label: {
                     CircleButtonIcon(
                         shape: TrackSkipIcon(direction: .next))
                     .offset(x: 1)
                     .frame(width: 15, height: 9)
                 })
+                .buttonStyle(CircleButtonStyle())
                 .frame(width: 27, height: 28)
             }
 
