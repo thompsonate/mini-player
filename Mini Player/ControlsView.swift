@@ -62,9 +62,13 @@ struct ControlsView: View {
                 .frame(width: 27, height: 28)
             }
 
-            VolumeSliderView()
-                .frame(height: 10)
-
+            HStack {
+                Spacer(minLength: 15)
+                VolumeSliderView()
+                Spacer(minLength: 15)
+            }
+            .frame(height: 10)
+            
             Spacer(minLength: 8)
         }
         .frame(width: 99)

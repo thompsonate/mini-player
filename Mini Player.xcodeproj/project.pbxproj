@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		437532C7251C0907008CDB9D /* LCDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C6251C0907008CDB9D /* LCDContentView.swift */; };
 		437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */; };
 		43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */; };
+		43A9A86B251C7B5200219AD6 /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 43A9A86A251C7B5200219AD6 /* Sliders */; };
 		43E99E6D251AF6B100B0181C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E99E6C251AF6B100B0181C /* AppDelegate.swift */; };
 		43E99E6F251AF6B100B0181C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E99E6E251AF6B100B0181C /* ContentView.swift */; };
 		43E99E71251AF6B500B0181C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E99E70251AF6B500B0181C /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A9A86B251C7B5200219AD6 /* Sliders in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,9 @@
 			dependencies = (
 			);
 			name = "Mini Player";
+			packageProductDependencies = (
+				43A9A86A251C7B5200219AD6 /* Sliders */,
+			);
 			productName = "Mini Player";
 			productReference = 43E99E69251AF6B100B0181C /* Mini Player.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 43E99E60251AF6B000B0181C;
+			packageReferences = (
+				43A9A869251C7B5200219AD6 /* XCRemoteSwiftPackageReference "swiftui-sliders" */,
+			);
 			productRefGroup = 43E99E6A251AF6B100B0181C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43A9A869251C7B5200219AD6 /* XCRemoteSwiftPackageReference "swiftui-sliders" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:spacenation/swiftui-sliders.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43A9A86A251C7B5200219AD6 /* Sliders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43A9A869251C7B5200219AD6 /* XCRemoteSwiftPackageReference "swiftui-sliders" */;
+			productName = Sliders;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43E99E61251AF6B000B0181C /* Project object */;
 }
