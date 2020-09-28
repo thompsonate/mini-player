@@ -30,9 +30,8 @@ struct LCDContentView: View {
                     .font(.lucidaGrande(size: 10))
                     .foregroundColor(LCDTextColor)
 
-                Slider(value: $playbackProgress)
+                ProgressSliderView()
                     .frame(height: 12)
-                    .controlSize(.small)
                 
                 Text("-4:12")
                     .font(.lucidaGrande(size: 10))
