@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let titleBarHeight: CGFloat = 22.0
+    
     var body: some View {
         ZStack {
             HStack {
@@ -17,6 +20,7 @@ struct ContentView: View {
             }
             
             BackgroundView()
+                .mouseDownCanMoveWindow()
             
             HStack(spacing: 0) {
                 Spacer(minLength: 21)
@@ -26,8 +30,9 @@ struct ContentView: View {
                 Spacer(minLength: 9)
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .frame(minWidth: 334, maxWidth: 500,
-               minHeight: 63, maxHeight: 63)
+               maxHeight: 63 - titleBarHeight)
     }
 }
 

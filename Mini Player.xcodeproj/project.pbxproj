@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4368DFF127420D0B006B3980 /* MiniPlayerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4368DFF027420D0B006B3980 /* MiniPlayerWindowController.swift */; };
+		4368DFF3274210CD006B3980 /* WindowMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4368DFF2274210CD006B3980 /* WindowMovingView.swift */; };
 		437532C7251C0907008CDB9D /* LCDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C6251C0907008CDB9D /* LCDContentView.swift */; };
 		437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */; };
 		4399C67F2522B54C00A20A98 /* VolumeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399C67E2522B54C00A20A98 /* VolumeIcon.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4368DFF027420D0B006B3980 /* MiniPlayerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerWindowController.swift; sourceTree = "<group>"; };
+		4368DFF2274210CD006B3980 /* WindowMovingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMovingView.swift; sourceTree = "<group>"; };
 		437532C6251C0907008CDB9D /* LCDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDContentView.swift; sourceTree = "<group>"; };
 		437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Shuffl.swift"; sourceTree = "<group>"; };
 		4399C67E2522B54C00A20A98 /* VolumeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeIcon.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				43E99E6C251AF6B100B0181C /* AppDelegate.swift */,
+				4368DFF027420D0B006B3980 /* MiniPlayerWindowController.swift */,
 				43E99E6E251AF6B100B0181C /* ContentView.swift */,
 				43E99E86251B01A000B0181C /* BackgroundView.swift */,
 				43E99E80251AF8F300B0181C /* ControlsView.swift */,
@@ -92,6 +97,7 @@
 				43E99E90251B079C00B0181C /* CircleButtonStyle.swift */,
 				43E99E8D251B054800B0181C /* IconShapes.swift */,
 				437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */,
+				4368DFF2274210CD006B3980 /* WindowMovingView.swift */,
 				43E99E70251AF6B500B0181C /* Assets.xcassets */,
 				43E99E75251AF6B500B0181C /* Main.storyboard */,
 				43E99E78251AF6B500B0181C /* Info.plist */,
@@ -194,8 +200,10 @@
 				43E99E6F251AF6B100B0181C /* ContentView.swift in Sources */,
 				43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */,
 				43E99E84251AF8FB00B0181C /* LCDView.swift in Sources */,
+				4368DFF3274210CD006B3980 /* WindowMovingView.swift in Sources */,
 				43E99E6D251AF6B100B0181C /* AppDelegate.swift in Sources */,
 				4399C67F2522B54C00A20A98 /* VolumeIcon.swift in Sources */,
+				4368DFF127420D0B006B3980 /* MiniPlayerWindowController.swift in Sources */,
 				437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */,
 				43E99E95251B113900B0181C /* VolumeSliderView.swift in Sources */,
 			);
