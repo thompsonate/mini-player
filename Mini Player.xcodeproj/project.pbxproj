@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		437532C7251C0907008CDB9D /* LCDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C6251C0907008CDB9D /* LCDContentView.swift */; };
 		437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */; };
+		4399C67F2522B54C00A20A98 /* VolumeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399C67E2522B54C00A20A98 /* VolumeIcon.swift */; };
 		43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */; };
 		43A9A86B251C7B5200219AD6 /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 43A9A86A251C7B5200219AD6 /* Sliders */; };
 		43A9A872251D4B6000219AD6 /* ProgressSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9A871251D4B6000219AD6 /* ProgressSliderView.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		437532C6251C0907008CDB9D /* LCDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDContentView.swift; sourceTree = "<group>"; };
 		437532C9251C2C8D008CDB9D /* Font+Shuffl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Shuffl.swift"; sourceTree = "<group>"; };
+		4399C67E2522B54C00A20A98 /* VolumeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeIcon.swift; sourceTree = "<group>"; };
 		43A3D8C7251BC95800D96F13 /* CircleButtonIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonIcon.swift; sourceTree = "<group>"; };
 		43A9A871251D4B6000219AD6 /* ProgressSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSliderView.swift; sourceTree = "<group>"; };
 		43E99E69251AF6B100B0181C /* Mini Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				43E99E6E251AF6B100B0181C /* ContentView.swift */,
 				43E99E86251B01A000B0181C /* BackgroundView.swift */,
 				43E99E80251AF8F300B0181C /* ControlsView.swift */,
+				4399C67E2522B54C00A20A98 /* VolumeIcon.swift */,
 				43E99E94251B113900B0181C /* VolumeSliderView.swift */,
 				43E99E83251AF8FB00B0181C /* LCDView.swift */,
 				437532C6251C0907008CDB9D /* LCDContentView.swift */,
@@ -192,6 +195,7 @@
 				43A3D8C8251BC95800D96F13 /* CircleButtonIcon.swift in Sources */,
 				43E99E84251AF8FB00B0181C /* LCDView.swift in Sources */,
 				43E99E6D251AF6B100B0181C /* AppDelegate.swift in Sources */,
+				4399C67F2522B54C00A20A98 /* VolumeIcon.swift in Sources */,
 				437532CA251C2C8D008CDB9D /* Font+Shuffl.swift in Sources */,
 				43E99E95251B113900B0181C /* VolumeSliderView.swift in Sources */,
 			);
@@ -343,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "app.shuffl.Mini-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -367,7 +371,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "app.shuffl.Mini-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -402,8 +406,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:spacenation/swiftui-sliders.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

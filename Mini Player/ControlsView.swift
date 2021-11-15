@@ -11,8 +11,8 @@ struct ControlsView: View {
     @State var isPlaying = false
     
     var body: some View {
-        VStack(spacing: 3) {
-            Spacer(minLength: 9)
+        VStack(spacing: 4) {
+            Spacer(minLength: 10)
 
             HStack(spacing: 2) {
                 Button(action: {
@@ -61,13 +61,18 @@ struct ControlsView: View {
                 .buttonStyle(CircleButtonStyle())
                 .frame(width: 27, height: 28)
             }
-
-            HStack {
-                Spacer(minLength: 15)
+            
+            HStack(spacing: 3) {
+                VolumeIcon(level: .low)
+                    .frame(width: 9)
+                
                 VolumeSliderView()
-                Spacer(minLength: 15)
+                
+                VolumeIcon(level: .high)
+                    .frame(width: 13)
             }
             .frame(height: 10)
+            .padding(.horizontal, 4)
             
             Spacer(minLength: 8)
         }
