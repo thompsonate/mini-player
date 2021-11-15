@@ -16,7 +16,7 @@ struct LCDContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {            
-            Text("shuffl Mini Player")
+            Text("mini player")
                 .font(.lucidaGrande(size: 11))
                 .fontWeight(.semibold)
                 .foregroundColor(LCDTextColor)
@@ -26,7 +26,7 @@ struct LCDContentView: View {
                 .foregroundColor(LCDTextColor)
             
             HStack {
-                Text("0:07")
+                Text("0:52")
                     .font(.lucidaGrande(size: 10))
                     .foregroundColor(LCDTextColor)
 
