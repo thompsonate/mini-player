@@ -22,7 +22,7 @@ struct VolumeSliderView: View {
                     thumb: Thumb(),
                     thumbSize: CGSize(width: 10, height: 10),
                     thumbInteractiveSize: CGSize(width: 15, height: 15),
-                    options: .defaultOptions))
+                    options: .interactiveTrack))
     }
 }
 

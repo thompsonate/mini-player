@@ -22,7 +22,7 @@ struct ProgressSliderView: View {
                     thumb: Thumb(),
                     thumbSize: CGSize(width: 7, height: 7),
                     thumbInteractiveSize: CGSize(width: 15, height: 15),
-                    options: .defaultOptions))
+                    options: .interactiveTrack))
     }
 }
 
